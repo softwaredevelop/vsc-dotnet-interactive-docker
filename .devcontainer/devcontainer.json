@@ -9,19 +9,20 @@
 	"settings": {
 		"editor.formatOnPaste": true,
 		"editor.formatOnSave": true,
-		"editor.rulers": [
-			40,
-			80,
-			132
-		],
 		"editor.wordWrapColumn": 132,
+		"editor.renderWhitespace": "all",
+		"editor.renderControlCharacters": true,
+		"code-eol.highlightExtraWhitespace": true,
+		"code-eol.decorateBeforeEol": true,
+		"code-eol.highlightNonDefault": true,
 	},
 	"extensions": [
 		"ms-dotnettools.vscode-dotnet-pack",
 		"ms-dotnettools.csharp",
 		"ionide.ionide-fsharp",
 		"ms-toolsai.jupyter",
-		"editorconfig.editorconfig"
+		"editorconfig.editorconfig",
+		"medo64.render-crlf"
 	],
 	"remoteUser": "vscode",
 }
