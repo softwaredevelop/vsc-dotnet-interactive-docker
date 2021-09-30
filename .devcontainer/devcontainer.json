@@ -1,0 +1,27 @@
+{
+	"name": ".NET interactive",
+	"runArgs": [
+		"--init"
+	],
+	"build": {
+		"dockerfile": "Dockerfile",
+	},
+	"settings": {
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+		"editor.rulers": [
+			40,
+			80,
+			132
+		],
+		"editor.wordWrapColumn": 132,
+	},
+	"extensions": [
+		"ms-dotnettools.vscode-dotnet-pack",
+		"ms-dotnettools.csharp",
+		"ionide.ionide-fsharp",
+		"ms-toolsai.jupyter",
+		"editorconfig.editorconfig"
+	],
+	"remoteUser": "vscode",
+}
