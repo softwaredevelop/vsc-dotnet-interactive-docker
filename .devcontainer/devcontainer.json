@@ -7,15 +7,28 @@
 		"dockerfile": "Dockerfile",
 	},
 	"settings": {
-		"editor.formatOnPaste": true,
-		"editor.formatOnSave": true,
-		"editor.wordWrap": "wordWrapColumn",
-		"editor.wordWrapColumn": 132,
-		"editor.renderWhitespace": "all",
-		"editor.renderControlCharacters": true,
-		"code-eol.highlightExtraWhitespace": true,
-		"code-eol.decorateBeforeEol": true,
-		"code-eol.highlightNonDefault": true,
+		"editor": {
+			"formatOnPaste": true,
+			"formatOnSave": true,
+			"renderControlCharacters": true,
+			"renderWhitespace": "all",
+			"wordWrap": "wordWrapColumn",
+			"wordWrapColumn": 132,
+		},
+		// "editor.formatOnPaste": true,
+		// "editor.formatOnSave": true,
+		// "editor.renderControlCharacters": true,
+		// "editor.renderWhitespace": "all",
+		// "editor.wordWrap": "wordWrapColumn",
+		// "editor.wordWrapColumn": 132,
+		"code-eol": {
+			"decorateBeforeEol": true,
+			"highlightExtraWhitespace": true,
+			"highlightNonDefault": true,
+		},
+		// "code-eol.decorateBeforeEol": true,
+		// "code-eol.highlightExtraWhitespace": true,
+		// "code-eol.highlightNonDefault": true,
 		"files.associations": {
 			"*.json": "jsonc"
 		}
