@@ -7,10 +7,11 @@ root = true
 # Use 4 spaces as indentation
 # A newline ending every file
 [*]
-indent_style = space
+charset = utf-8
 indent_size = 4
-trim_trailing_whitespace = true
+indent_style = space
 insert_final_newline = true
+trim_trailing_whitespace = true
 
 [devcontainer.json]
 indent_style = tab
