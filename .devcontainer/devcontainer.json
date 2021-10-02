@@ -3,6 +3,9 @@
 	"runArgs": [
 		"--init"
 	],
+	"mounts": [
+		"source=vscode-${localWorkspaceFolderBasename}-bashhistory,target=/commandhistory,type=volume"
+	],
 	"build": {
 		"dockerfile": "Dockerfile",
 	},
