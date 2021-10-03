@@ -15,10 +15,10 @@ RUN SNIPPET="export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhisto
     && echo $SNIPPET >> "/home/$USERNAME/.bashrc"
 
 RUN mkdir --parents /home/$USERNAME/.vscode-server/extensions \
-    /home/$USERNAME/.vscode-server-insiders/extensions \
+    # /home/$USERNAME/.vscode-server-insiders/extensions \
     && chown --recursive $USERNAME \
-    /home/$USERNAME/.vscode-server \
-    /home/$USERNAME/.vscode-server-insiders
+    /home/$USERNAME/.vscode-server
+# /home/$USERNAME/.vscode-server-insiders
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \

@@ -4,7 +4,7 @@
 	"mounts": [
 		"source=vscode-${localWorkspaceFolderBasename}-bashhistory,target=/commandhistory,type=volume",
 		"source=vscode-${localWorkspaceFolderBasename},target=/home/vscode/.vscode-server/extensions,type=volume",
-		"source=vscode-${localWorkspaceFolderBasename}-insiders,target=/home/vscode/.vscode-server-insiders/extensions,type=volume"
+		// "source=vscode-${localWorkspaceFolderBasename}-insiders,target=/home/vscode/.vscode-server-insiders/extensions,type=volume"
 	],
 	"build": {
 		"dockerfile": "Dockerfile"
