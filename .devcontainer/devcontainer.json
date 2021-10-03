@@ -1,19 +1,19 @@
 {
 	"name": ".NET interactive",
-	"runArgs": [
-		"--init"
-	],
+	"runArgs": ["--init"],
 	"mounts": [
-		"source=vscode-${localWorkspaceFolderBasename}-bashhistory,target=/commandhistory,type=volume"
+		"source=vscode-${localWorkspaceFolderBasename}-bashhistory,target=/commandhistory,type=volume",
+		"source=vscode-${localWorkspaceFolderBasename},target=/home/vscode/.vscode-server/extensions,type=volume",
+		"source=vscode-${localWorkspaceFolderBasename}-insiders,target=/home/vscode/.vscode-server-insiders/extensions,type=volume"
 	],
 	"build": {
-		"dockerfile": "Dockerfile",
+		"dockerfile": "Dockerfile"
 	},
 	"settings": {
 		"code-eol": {
 			"decorateBeforeEol": true,
 			"highlightExtraWhitespace": true,
-			"highlightNonDefault": true,
+			"highlightNonDefault": true
 		},
 		"editor": {
 			"formatOnPaste": true,
@@ -21,7 +21,7 @@
 			"renderControlCharacters": true,
 			"renderWhitespace": "all",
 			"wordWrap": "wordWrapColumn",
-			"wordWrapColumn": 132,
+			"wordWrapColumn": 132
 		},
 		// "code-eol.decorateBeforeEol": true,
 		// "code-eol.highlightExtraWhitespace": true,
@@ -44,5 +44,5 @@
 		"editorconfig.editorconfig",
 		"medo64.render-crlf"
 	],
-	"remoteUser": "vscode",
+	"remoteUser": "vscode"
 }
