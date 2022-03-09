@@ -1,6 +1,5 @@
 {
 	"name": ".NET interactive",
-	"runArgs": ["--init"],
 	"mounts": [
 		"source=vscode-${localWorkspaceFolderBasename}-bashhistory,target=/commandhistory,type=volume",
 		"source=vscode-${localWorkspaceFolderBasename},target=/home/vscode/.vscode-server/extensions,type=volume",
@@ -44,5 +43,11 @@
 		"editorconfig.editorconfig",
 		"medo64.render-crlf"
 	],
-	"remoteUser": "vscode"
+	"remoteUser": "vscode",
+
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,Z",
+	"workspaceFolder": "/workspace",
+
+	"runArgs": ["--init", "--userns=keep-id", "--name=dotnet-interactive"],
+	"containerUser": "vscode"
 }
