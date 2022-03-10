@@ -11,3 +11,14 @@ updates:
     labels:
       - "GitHub Actions dependencies"
       - "triage-board"
+
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+      time: "00:00"
+      timezone: "Europe/Berlin"
+    labels:
+      - "Docker dependencies"
+      - "triage-board"
