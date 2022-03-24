@@ -50,4 +50,6 @@ jobs:
 
       - name: Scan config Containerfiles for vulnerabilities
         run: |
-          trivy config --severity CRITICAL,HIGH /volume
+          trivy config \
+          --severity CRITICAL,HIGH \
+          /volume
